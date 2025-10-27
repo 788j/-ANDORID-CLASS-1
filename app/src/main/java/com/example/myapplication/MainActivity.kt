@@ -51,7 +51,7 @@ fun Home() {
             .background(Color.Red)
             .padding(16.dp),
         fontFamily = FontFamily.Monospace,
-        text = "hola desde la home"
+        text = "hola desde mi home"
     )
     Home2()
 }
