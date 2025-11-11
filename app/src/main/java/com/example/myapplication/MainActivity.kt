@@ -18,20 +18,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.myapplication.ui.theme.MyapplicationTheme
 import androidx.compose.foundation.layout.Arrangement
+import com.example.my_application.ui.theme.App
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            MyapplicationTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
+            App()
         }
     }
 }
@@ -120,3 +114,6 @@ fun GreetingPreview() {
         Greeting("Android")
     }
 }
+
+
+
